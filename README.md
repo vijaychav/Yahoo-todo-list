@@ -20,7 +20,7 @@ Once done:
 In C: directory, make a folder for MongodB to use as database.
 ```sh
 $ mkdir data
-$ mkdir data/db
+$ mkdir data\db\
 ```
 Then run mongod.exe from the folder where MongodB is installed to bring up the dB.
 

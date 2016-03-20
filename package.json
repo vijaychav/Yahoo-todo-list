@@ -1,0 +1,13 @@
+{
+	"name"      :    "yahoo-do",
+	"version"    : "0.0.1",
+	"description": "Todo app for Yahoo",
+	"main"	: "app.js",
+	"dependencies":{
+		"body-parser": "1.4.x",
+		"mongoose": "3.8.x",
+		"express": "4.13.x",
+		"morgan": "1.1.x",
+		"bson": "0.4.22"
+	}
+}

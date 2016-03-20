@@ -1,0 +1,43 @@
+<!doctype html>
+
+<html ng-app="angmodule">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Yahoo todo list app</title>
+
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script>
+    <script src="controller.js"></script>
+
+</head>
+<body ng-controller="mainController">
+	<div>
+		<h1>Yahoo to-do app!<h1>
+        <h2>You have {{ todos.length }} items to complete</h2>
+        
+        <div id="todolist"
+                <div ng-repeat="todo in todos">
+                    <label>
+                        <input type="checkbox" ng-click="deleteTodo(todo._id)">{{ todo.text }}<span style="padding-left:68px;"></span> Created at: <span>{{todo.updatedtime}}</span></input>
+                    </label>
+                </div>
+        </div>
+
+        <div id="todo-form">
+                <form>
+                    <div>
+                        <input type="text" ng-model="formData.text">
+                    </div>
+
+                    <button type="submit" ng-click="createTodo()">Add item to list</button>
+                    <br><br/>
+                    <button type="submit" ng-click="resetTodo()">Reset all items</button>
+                    
+                </form>
+        </div>
+
+    </div>
+
+</body>
+</html>
